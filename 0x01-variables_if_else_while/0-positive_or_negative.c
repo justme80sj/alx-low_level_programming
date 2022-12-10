@@ -1,31 +1,21 @@
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-
 /**
- * main - print if the number is  positive, negative and zero
- * return: Always 0
- */
-
+ * main - Prints a random number
+ *
+ * Return: Always 0.
+*/
 int main(void)
-
 {
-	int k;
+	int i;
 
 	srand(time(0));
-	k = rand() - RAND_MAX / 2;
+	i = rand() - RAND_MAX / 2;
 
-	if (k > 0)
-	{
-		printf("%d is positive\n", k);
-	}
-	else if (k == 0)
-	{
-		printf("%d is zero\n", k);
-	}
+	if (i > 0)
+		printf("%d is positive\n", i);
+	else if (i < 0)
+		printf("%d is negative\n", i);
 	else
-	{
-		printf("%d is negative\n", k);
-	}
+		printf("%d is zero\n", i);
+
 	return (0);
 }
