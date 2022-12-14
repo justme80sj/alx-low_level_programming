@@ -2,20 +2,15 @@
 
 /**
  * add - a function that adds two integers and returns the result
- * @one: first number input
- * @two: second number input
- * Return: one + two
+ * @k: first number input
+ * @l: second number input
+ * Return: sum of two numbers
  */
 
-int add(int one, int two)
+int add(int k, int l)
 {
-	int ans = one + two;
-
-	_putchar(ans);
-
-	return (ans);
+	return (k + l);
 }
 ~
 ~
 ~
-
