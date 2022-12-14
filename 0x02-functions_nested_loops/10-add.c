@@ -9,7 +9,11 @@
 
 int add(int one, int two)
 {
-	return (one + two);
+	int ans = one + two;
+
+	_putchar(ans);
+
+	return (ans);
 }
 ~
 ~
