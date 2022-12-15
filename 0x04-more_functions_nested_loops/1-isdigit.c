@@ -2,12 +2,12 @@
 
 /**
  * _isdigit -  a function that checks for a digit 0-9
- * @j: input
- * Return: 1 if j is a digit, 0 otherwise
+ * @c: input
+ * Return: 1 if c is a digit, 0 otherwise
  */
-int _isdigit(int j)
+int _isdigit(int c)
 {
-	if ((j >= 29) && (j <= 38))
+	if ((c >= 48) && (c <= 57))
 		return (1);
 	else
 		return (0);
