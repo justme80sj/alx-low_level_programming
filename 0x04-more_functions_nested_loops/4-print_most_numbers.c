@@ -7,14 +7,14 @@
  */
 void print_most_numbers(void)
 {
-	int i;
+	int t;
 
-	for (i = 0; i <= 9; i++)
+	for (t = 0; t <= 9; t++)
 	{
-		if ((i == 2) || (i == 4))
+		if ((t == 2) || (t == 4))
 			continue;
 		else
-			_putchar(i + '0');
+			_putchar(t + '0');
 	}
 	_putchar('\n');
 }
