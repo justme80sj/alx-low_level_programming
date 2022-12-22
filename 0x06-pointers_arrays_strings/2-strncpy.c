@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncpy - Entry point
+ * _strncpy - a function that copies a string
  * @dest: copy to
  * @src: copy from
  * @n: input number of char
@@ -9,13 +9,13 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int y;
+	int i;
 
-	for (y = 0; src[y] != '\0'; y++)
-		if (y < n)
-			dest[y] = src[y];
-		while (y < n)
-			dest[y++] = '\0';
+	for (i = 0; src[i] != '\0'; i++)
+		if (i < n)
+			dest[i] = src[i];
+	while (i < n)
+		dest[i++] = '\0';
 
 	return (dest);
 }
